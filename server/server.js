@@ -132,9 +132,16 @@ const server = app.listen(PORT, HOST, () => {
     console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
 });
 
-if (process.env.NODE_ENV = "production") {
-    app.use(express.static("client/build"));
-}
+// if (process.env.NODE_ENV = "production") {
+//     app.use(express.static("client/build"));
+// }
+
+app.get('/', (req, res) => {
+    res.send({
+        activeStatus: true,
+        error: false,
+    })
+})
 
 // Graceful Shutdown
 process.on('SIGTERM', () => {
