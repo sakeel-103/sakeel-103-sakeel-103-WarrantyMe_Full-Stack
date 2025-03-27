@@ -1,0 +1,139 @@
+/* src/styles/editor.css */
+.editor-page h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .editor-layout {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .editor-section {
+    flex: 2;
+    min-width: 300px;
+  }
+  
+  .letter-list-section {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .editor {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .editor-title {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .editor-content {
+    margin-bottom: 15px;
+  }
+  
+  .editor-content .ql-editor {
+    min-height: 200px;
+  }
+  
+  .letter-list {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .letter-list h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #007bff;
+  }
+  
+  .letter-list ul {
+    list-style: none;
+  }
+  
+  .letter-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .letter-item:last-child {
+    border-bottom: none;
+  }
+  
+  .letter-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .letter-title {
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .letter-title:hover {
+    color: #007bff;
+  }
+  
+  .letter-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn-small {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+  }
+  
+  .drive-letter {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .drive-letter h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .drive-content {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .editor-layout {
+      flex-direction: column;
+    }
+  
+    .editor-section,
+    .letter-list-section {
+      flex: 1;
+    }
+  }

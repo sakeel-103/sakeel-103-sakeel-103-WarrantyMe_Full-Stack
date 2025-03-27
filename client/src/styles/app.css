@@ -1,0 +1,671 @@
+/* frontend/src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Global Styles */
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0; 
+  padding: 0; 
+  padding-top: 54px; 
+  width: 100vw;
+  overflow-x: hidden !important;
+}
+
+/* Style the App div */
+.App {
+  width: 100vw;
+  min-width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  flex: 1;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design for Global Container */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+}
+
+/* -- Home page -- */
+
+.home-container {
+  min-height: calc(100vh - 120px); 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.home-hero {
+  text-align: center;
+  padding: 100px 80px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85)), url('https://www.transparenttextures.com/patterns/clean-gray-paper.png');
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  max-width: 800px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.home-hero:hover {
+  transform: translateY(-5px);
+}
+
+.home-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #007bff;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.home-cta {
+  margin-top: 30px;
+}
+
+.home-message {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #6c757d;
+  font-family: 'Roboto', sans-serif;
+}
+
+.home-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.home-btn-primary {
+  background-color: #007bff;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.home-btn-primary:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 15px;
+  }
+
+  .home-hero {
+    padding: 40px 20px;
+    margin: 0 15px;
+    max-width: 100%;
+  }
+
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .home-message {
+    font-size: 1rem;
+  }
+
+  .home-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+/* ---Login page --- */
+
+/* src/styles/Login.css */
+.login-container {
+  min-height: calc(100vh - 120px); 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login-box {
+  text-align: center;
+  padding: 100px 80px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85)), url('https://www.transparenttextures.com/patterns/clean-gray-paper.png');
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  max-width: 800px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.login-box:hover {
+  transform: translateY(-5px); 
+}
+
+.login-title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #007bff;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-message {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #6c757d;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn-google {
+  background-color: #4285f4;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  position: relative;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-google::before {
+  content: '';
+  background: url('https://developers.google.com/identity/images/g-logo.png') no-repeat center center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.btn-google:hover {
+  background-color: #3267d6;
+  transform: translateY(-3px);
+}
+
+.btn-google:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 15px;
+  }
+
+  .login-box {
+    padding: 25px;
+    margin: 0 15px;
+    max-width: 100%;
+  }
+
+  .login-title {
+    font-size: 1.6rem;
+  }
+
+  .login-message {
+    font-size: 1rem;
+  }
+
+  .btn-google {
+    padding: 10px 16px;
+    font-size: 1rem;
+  }
+}
+
+/* ---- Navbar page ---- */
+
+/* ---- Navbar page ---- */
+
+.navbar {
+  display: block;
+  background-color: #1A3C34; 
+  color: white;
+  padding: 15px 0; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+  position: fixed; 
+  top: 0;
+  left: 0; 
+  right: 0; 
+  width: 100%; 
+  margin: 0; 
+  z-index: 1000; 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+.navbar-container {
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0 15px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 1px;
+}
+
+.navbar-logo {
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo:hover {
+  color: #d3d3d3; 
+}
+
+.navbar-logo:focus {
+  outline: 2px solid #F28C38; 
+  outline-offset: 2px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 30px; 
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-right: 1px;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #d3d3d3; 
+}
+
+.navbar-link:focus {
+  outline: 2px solid #F28C38;
+  outline-offset: 2px;
+}
+
+.navbar-link-active {
+  color: #F28C38; 
+}
+
+.navbar-link-active:hover {
+  color: #e07b30; 
+}
+
+.navbar-user {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+}
+
+/* Style the LogoutButton */
+.btn-logout {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-logout:hover {
+  color: #d3d3d3; 
+}
+
+.btn-logout:focus {
+  outline: 2px solid #F28C38;
+  outline-offset: 2px;
+}
+
+/* Hamburger Menu for Mobile */
+.navbar-toggle {
+  display: none; 
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 15px;
+    position: relative;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-toggle {
+    display: block; 
+  }
+
+  .navbar-links {
+    display: none; 
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 20px 0;
+    background: #1A3C34; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+  }
+
+  .navbar-links.active {
+    display: flex; 
+  }
+
+  .navbar-link {
+    font-size: 1rem;
+  }
+
+  .navbar-user {
+    font-size: 1rem;
+  }
+
+  .btn-logout {
+    font-size: 1rem;
+  }
+}
+
+/* ----  EditorPage ----*/
+
+/* frontend/src/styles/editor.css */
+
+.editor-page {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #2D3436; /* Dark gray for text */
+}
+
+/* Editor Page Heading */
+.editor-page h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #2D3436;
+    text-align: center;
+}
+
+/* Editor Component Styles */
+.editor {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.editor input,
+.editor textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #DFE6E9; /* Light gray border */
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #2D3436;
+    transition: border-color 0.3s ease;
+}
+
+.editor input:focus,
+.editor textarea:focus {
+    outline: none;
+    border-color: #1E90FF; /* Primary blue on focus */
+}
+
+.editor textarea {
+    height: 400px;
+    resize: vertical;
+}
+
+.editor button {
+    background-color: #1E90FF; /* Primary blue */
+    color: #FFFFFF;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.editor button:hover {
+    background-color: #1873CC; /* Darker blue on hover */
+}
+
+.editor button:active {
+    transform: scale(0.98); /* Slight scale-down on click */
+}
+
+/* LetterList Component Styles */
+.letter-list {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.letter-list h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #2D3436;
+}
+
+.letter-list ul {
+    list-style: none;
+}
+
+.letter-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #DFE6E9;
+    transition: background-color 0.3s ease;
+}
+
+.letter-list li:last-child {
+    border-bottom: none;
+}
+
+.letter-list li:hover {
+    background-color: #F5F7FA; /* Light gray on hover */
+}
+
+.letter-list span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #2D3436;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.letter-list span:hover {
+    color: #1E90FF; /* Primary blue on hover */
+}
+
+.letter-list button {
+    background-color: #1E90FF;
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.letter-list button:hover {
+    background-color: #1873CC;
+}
+
+.letter-list button:active {
+    transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .editor-page {
+        padding: 0 1rem;
+    }
+
+    .editor-page h1 {
+        font-size: 1.8rem;
+    }
+
+    .editor {
+        padding: 1.5rem;
+    }
+
+    .letter-list {
+        padding: 1.5rem;
+    }
+
+    .letter-list h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* ---Editorpage --- */
+
+/* Error Message */
+.error-message {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Editor Actions Container */
+.editor-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+/* Cancel Button */
+.cancel-btn {
+  background-color: #95a5a6;
+  color: #FFFFFF;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.cancel-btn:hover {
+  background-color: #7f8c8d;
+}
+
+.cancel-btn:active {
+  transform: scale(0.98);
+}
+
+.cancel-btn:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
